@@ -17,8 +17,8 @@ package com.getglue.widgets {
 			return sprite;
 		}
 		
-		public static function checkin(object_key:String):void {
-			ExternalInterface.call("getglue.checkin", object_key);
+		public static function checkin(object_key:String, source:String = ""):void {
+			ExternalInterface.call("getglue.checkin", object_key, source);
 		}
 		
 		public static function basicCheckinButton(object_key:String):Sprite {

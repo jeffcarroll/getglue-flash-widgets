@@ -9,15 +9,15 @@ By including the check-in widgets JavaScript file on the same pages as the AS3-b
     <script type="text/javascript" src="http://widgets.getglue.com/checkin.js"></script>
     <embed src="your-file.swf" type="application/x-shockwave-flash" width="320" height="240"></embed>
 
-By default, the library is packaged as`com.getglue.widgets`.
+By default, the library is packaged as `com.getglue.widgets`.
 
 ## API
 
-### `CheckinWidget.checkin(object_key:String, source:String = ""):void`
+### CheckinWidget.checkin(object_key:String, source:String = ""):void
 
 Launches the check-in overlay for the object specified by `object_key`. For more information regarding object keys, read the [Object IDs section of the API docs](http://getglue.com/api#object-ids). The `source` parameter is optional, and if not provided will default to the current URI of the page.
 
-### `CheckinWidget.basicCheckinButton(object_key:String):Sprite`
+### CheckinWidget.basicCheckinButton(object_key:String):Sprite
 
 The package comes with a 65x18 GetGlue mark for you to use as a button, and the `basicCheckinButton` method uses it to create a `Sprite` instance with mouseover states that will launch the check-in overlay when clicked. The sprite returned can be added to the stage directly.
 
